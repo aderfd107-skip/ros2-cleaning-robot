@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="multi_obstacle">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="wall_north">
+      <static>true</static>
+      <pose>0 4 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>8 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>8 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>0 -4 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>8 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>8 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>4 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>-4 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_north_west">
+      <static>true</static>
+      <pose>-2.2 2.0 0.35 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1.0 0.7 0.7</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1.0 0.7 0.7</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_north_east">
+      <static>true</static>
+      <pose>2.1 1.8 0.4 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.8 1.2 0.8</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.8 1.2 0.8</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_south_west">
+      <static>true</static>
+      <pose>-1.8 -1.9 0.3 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1.4 0.6 0.6</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1.4 0.6 0.6</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_south_east">
+      <static>true</static>
+      <pose>1.9 -2.2 0.45 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1.1 0.8 0.9</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1.1 0.8 0.9</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_center">
+      <static>true</static>
+      <pose>0.0 1.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.45</radius><length>0.5</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.45</radius><length>0.5</length></cylinder></geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

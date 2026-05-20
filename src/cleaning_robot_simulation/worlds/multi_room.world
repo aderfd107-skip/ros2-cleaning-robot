@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="multi_room">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="wall_north">
+      <static>true</static>
+      <pose>0 4 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>10 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>10 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>0 -4 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>10 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>10 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>5 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>-5 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 8 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="left_upper_partition">
+      <static>true</static>
+      <pose>-1.5 2.2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="left_lower_partition">
+      <static>true</static>
+      <pose>-1.5 -2.2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="right_upper_partition">
+      <static>true</static>
+      <pose>1.5 2.2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="right_lower_partition">
+      <static>true</static>
+      <pose>1.5 -2.2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="north_partition">
+      <static>true</static>
+      <pose>0.0 2.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1.8 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1.8 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="south_partition">
+      <static>true</static>
+      <pose>0.0 -2.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1.8 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1.8 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

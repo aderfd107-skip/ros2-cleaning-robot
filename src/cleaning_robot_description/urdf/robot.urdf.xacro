@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="cleaning_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find cleaning_robot_description)/urdf/materials.xacro"/>
+  <xacro:include filename="$(find cleaning_robot_description)/urdf/base.xacro"/>
+  <xacro:include filename="$(find cleaning_robot_description)/urdf/sensors.xacro"/>
+
+  <gazebo>
+    <plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odometry:=odom</remapping>
+      </ros>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+    </plugin>
+  </gazebo>
+</robot>

@@ -1,0 +1,29 @@
+auto_explore_and_save:
+  ros__parameters:
+    exploration_timeout: 140.0
+    max_exploration_timeout: 220.0
+    map_stall_duration: 24.0
+    frontier_cluster_min_cells: 8
+    frontier_residual_cluster_min_cells: 3
+    frontier_target_reached_distance: 0.30
+    frontier_target_timeout: 70.0
+    frontier_target_switch_distance: 1.20
+    frontier_heading_weight: 0.55
+    frontier_target_cell_stride: 2
+    frontier_target_offset: 0.10
+    frontier_clearance_radius: 0.11
+    frontier_blocked_path_penalty: 1.6
+    frontier_unknown_path_penalty: 0.5
+    frontier_completion_max_clusters: 0
+    frontier_completion_max_cells: 0
+    completion_max_bbox_unknown_ratio: 0.05
+    completion_max_bbox_unknown_area: 0.8
+    completion_require_both_bbox_metrics: true
+    frontier_failed_goal_cooldown: 12.0
+    frontier_failed_goal_radius: 0.30
+    frontier_failed_goal_max_retries: 5
+    frontier_failed_goal_backoff: 1.2
+    frontier_reached_goal_cooldown: 35.0
+    bootstrap_spin_enabled: true
+    bootstrap_spin_target_yaw: 6.283185307179586
+    bootstrap_spin_time_allowance: 25.0
