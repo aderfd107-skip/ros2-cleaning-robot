@@ -83,13 +83,6 @@ ros2 launch cleaning_robot_coverage coverage.launch.py
 - `src/cleaning_robot_bringup/scripts/auto_explore_and_save.py`：自动探索与存图逻辑
 - `src/cleaning_robot_coverage/cleaning_robot_coverage/coverage_planner.py`：覆盖规划原型
 
-## 文档导航
-
-- [零基础详细说明书](docs/zero-basics-guide.md)
-- [项目状态说明](PROJECT_STATUS.md)
-- [项目阶段总结](conclusion.md)
-- [Nav2 已知地图验证记录](src/cleaning_robot_bringup/docs/nav2_known_map_validation.md)
-- [阶段 5 仿真回归记录](src/cleaning_robot_bringup/docs/phase5_simulation_regression.md)
 
 ## 当前边界
 
