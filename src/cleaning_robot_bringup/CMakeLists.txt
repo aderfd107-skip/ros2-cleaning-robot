@@ -18,10 +18,6 @@ install(DIRECTORY launch config maps docs
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(FILES README.md
-  DESTINATION share/${PROJECT_NAME}
-)
-
 install(PROGRAMS
   scripts/auto_explore_and_save.py
   scripts/phase5_world_smoke.sh
